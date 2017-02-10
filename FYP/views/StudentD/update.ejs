@@ -1,0 +1,11 @@
+ <a href="/StudentD/index">List</a>
+        <h2>StudentD #<%=model.sid %> Update form</h2>
+        <form action="/StudentD/update/<%=model.id %>" method="POST">
+        <table>
+
+        <tr><td>UID<td><input type="text" name="StudentD[uid]" value="<%=model.uid %>"><br/>
+		<tr><td>Student ID<td><input type="text" name="StudentD[sid]" value="<%=model.sid %>"><br/>
+   		<tr><td>Student Name<td><input type="text" name="StudentD[name]" value="<%=model.name %>"><br/>
+
+        <tr ><td><td><input type="submit" value="SAVE">
+        </form>

@@ -1,0 +1,8 @@
+  <a href="/Student/create">+Create</a>
+  <ol>
+  	<h2>Student Table</h2>
+  	<p>Student ID</p>
+  	<% student.forEach( function( model ){ %>
+  	<li><%= model.sid %> ( <a href="/Student/delete/<%= model.id %>">Delete</a> | <a href="/Student/update/<%= model.id %>">Update</a> | <a href="/Student/view/<%=model.id %>">View</a> )</li>
+  	<% }); %>
+  </ol>

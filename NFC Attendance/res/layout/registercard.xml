@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_b"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:background="@drawable/menubar3" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Register New Card"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Student ID:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/etRegCardSID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:hint="Ex: 12051365" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Student Name:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/etRegCardSName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:hint="Ex: Hilda HE" />
+
+    <TextView
+        android:id="@+id/tvCardInfoRemind"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Please tap a card......"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+</LinearLayout>

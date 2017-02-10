@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uistart"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.uistart.WelcomeSplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uistart.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uistart.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.MAINMENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uistart.NFCMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.NFCMENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".TakeAttendance"
+            android:label="@string/app_name" >
+        </activity>
+        -->
+        <activity
+            android:name="com.example.uistart.CopyOfTakeAttendance"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+
+            <!-- android:screenOrientation="nosensor" -->
+
+            <!--
+            <intent-filter>
+                <action android:name="com.example.uistart.TAKEATTENDANCE" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <!--
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name="com.example.uistart.AddCourse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.CardInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.ShowAttendance"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.RegisterCard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.REGISTERCARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uistart.Enroll"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DNFCMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.DNFCMENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uistart.DTakeAttendance"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DAddCourse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DEnroll"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DCardInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DShowAttendance"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uistart.DRegisterCard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.uistart.DREGISTERCARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

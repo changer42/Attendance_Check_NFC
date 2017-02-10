@@ -1,0 +1,9 @@
+  <a href="/Course/create">+Create</a>
+  
+  <ol>
+  	<h2>Course Table</h2>
+  	<p>Course Code</p>
+  	<% course.forEach( function( model ){ %>
+  	<li><%= model.code %> ( <a href="/Course/delete/<%= model.code %>">Delete</a> | <a href="/Course/update/<%= model.code %>">Update</a> | <a href="/Course/view/<%=model.code%>">View</a> )</li>
+  	<% }); %>
+  </ol>

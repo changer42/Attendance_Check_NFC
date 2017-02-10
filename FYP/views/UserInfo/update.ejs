@@ -1,0 +1,9 @@
+ <a href="/UserInfo/index">List</a>
+        <h2>Person #<%=model.name %> Update form</h2>
+        <form action="/UserInfo/update/<%=model.id %>" method="POST">
+        <table>
+        
+        <tr><td>Name<td><input type="text" name="UserInfo[name]" value="<%=model.name %>"><br/>
+        <tr><td>Age<td><input type="text" name="UserInfo[age]" value="<%=model.age %>">
+        <tr ><td><td><input type="submit" value="SAVE">
+        </form>

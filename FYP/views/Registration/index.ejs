@@ -1,0 +1,8 @@
+  <a href="/Registration/create">+Create</a>
+  <ol>
+  	<h2>Registratoin Table</h2>
+  	<% registration.forEach( function( model ){ %>
+  	<li> UID: <%= model.uid %> <br/> Course Code: <%= model.cid %> ( <a href="/Registration/delete/<%= model.id %>">Delete</a> | <a href="/Registration/update/<%= model.id %>">Update</a> | <a href="/Registration/view/<%=model.id %>">View</a> )</li>
+  	<% }); %>
+
+  </ol>

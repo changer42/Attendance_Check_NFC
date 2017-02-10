@@ -1,0 +1,7 @@
+  <a href="/AttendanceD/create">+Create</a>
+  <ol>
+  	<h2>AttendanceD Table</h2>
+  	<% attendance.forEach( function( model ){ %>
+  	<li>UID: <%= model.uid %> <br/> Course Code: <%= model.code %> ( <a href="/AttendanceD/delete/<%= model.id %>">Delete</a> | <a href="/AttendanceD/update/<%= model.id %>">Update</a> | <a href="/AttendanceD/view/<%=model.id %>">View</a> )</li>
+  	<% }); %>
+  </ol>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_b"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:background="@drawable/menubar5" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Card Information"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/tvDCardInfoRemind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Please tap a card...."
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvDCardInfoStudent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Student Information: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoUID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="UID: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoSID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Student ID: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoSName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Student Name: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoAttendance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Attendance Information: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoCourseCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Course Code: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoCourseName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Course Name: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoCourseAttendance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Course Quota: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvDCardInfoMore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

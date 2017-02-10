@@ -1,0 +1,10 @@
+ <a href="/Attendance/index">List</a>
+        <h2>Attendance #<%=model.uid %> Update form</h2>
+        <form action="/Attendance/update/<%=model.id %>" method="POST">
+        <table>
+
+ 		<tr><td>UID<td><input type="text" name="Attendance[uid]" value="<%=model.uid %>"><br/>
+    	<tr><td>Course Code<td><input type="text" name="Attendance[code]" value="<%=model.code %>">
+
+        <tr ><td><td><input type="submit" value="SAVE">
+        </form>

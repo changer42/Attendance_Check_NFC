@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_b"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <!--
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+    -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:background="@drawable/menubar4" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Course"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/tvCourseCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Course Code:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/etCourseCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:hint="Ex: COMP3070" />
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Course Name:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/etCourseName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:hint="Ex: Data Atructure and Algorithms" />
+
+    <TextView
+        android:id="@+id/tvCourseRemark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Remarks:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/etCourseRemark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:hint="Ex: level 2 course" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bCourseAddConfirm"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_b"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/bCourseAddCancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_b"
+            android:text="Back" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

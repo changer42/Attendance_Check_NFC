@@ -1,0 +1,11 @@
+ <a href="/CourseD/index">List</a>
+        <h2>CourseD #<%=model.code %> Update form</h2>
+        <form action="/CourseD/update/<%=model.code %>" method="POST">
+        <table>
+        
+		<tr><td>Course Code<td><input type="text" name="CourseD[code]" value="<%=model.code %>"><br/>
+   		<tr><td>Course Name<td><input type="text" name="CourseD[name]" value="<%=model.name %>"><br/>
+   		<tr><td>Remark<td><input type="text" name="CourseD[remark]" value="<%=model.remark %>">
+
+        <tr ><td><td><input type="submit" value="SAVE">
+        </form>
